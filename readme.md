@@ -1,6 +1,6 @@
 # Feed Reader App
 
-Aplicativo para a prova da Electric Dreams
+Aplicativo para a prova da Electric Dreams. [Demo online](https://feed-reader-app.herokuapp.com/#/home)
 
 ## Instalação
 
@@ -14,10 +14,10 @@ npm install
 
 ## Usage
 
-Para rodar localmente
+Para rodar localmente:
 
 ```bash
 ionic serve
 ```
 
-
+Quando abrir a aplicação, inspecione o elemento clicando com o botão direito do mouse e depois selecionando uma opção mobile.
