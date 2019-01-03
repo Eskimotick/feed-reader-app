@@ -20,4 +20,4 @@ Para rodar localmente:
 ionic serve
 ```
 
-Quando abrir a aplicação, inspecione o elemento clicando com o botão direito do mouse e depois selecione uma opção mobile.
+Quando abrir a aplicação, inspecione o elemento clicando com o botão direito do mouse e depois selecione uma opção mobile. Se parecer bugado, por favor atualize a página.
