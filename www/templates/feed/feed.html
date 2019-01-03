@@ -1,0 +1,16 @@
+<ion-view view-title="Feed">
+  <ion-content class="padding">
+		<h4 class="center-align">Escolha um feed para ler suas notícias ou adicione um!</h4>
+		<div class="list">
+			<a class="item item-icon-right" ng-repeat="feed in feeds" ng-click="navigateToPost(feed)">
+				<b>{{feed.name}}</b>
+				<p>{{feed.url}}</p>
+				<i class="icon ion-arrow-right-c feed-icon"></i>
+			</a>
+		</div>
+	</ion-content>
+	<div class="fab-position">
+		<button class="button icon ion-more button-positive fab" ng-click="showActions()"></button>	
+	</div>
+</ion-view>
+      

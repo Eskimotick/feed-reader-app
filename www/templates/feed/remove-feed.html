@@ -1,0 +1,14 @@
+<ion-view view-title="Remover Feed">
+    <ion-content class="padding">
+      <h4 class="center-align">Selecione os Feeds que você deseja apagar</h4>
+      <ion-list>
+        <ion-checkbox ng-model="feed.selected" ng-repeat="feed in feeds">
+          <b>{{feed.name}}</b>
+          <p>{{feed.url}}</p>
+        </ion-checkbox>
+      </ion-list>
+    </ion-content>
+    <div class="fab-position">
+      <button class="button icon ion-trash-a button-assertive fab" ng-click="removeFeeds()"></button>	
+    </div>
+</ion-view>

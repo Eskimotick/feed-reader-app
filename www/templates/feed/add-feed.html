@@ -1,0 +1,38 @@
+<ion-view view-title="Adicionar Feed">
+    <ion-content class="padding">
+			<h4 class="center-align">Preencha os dados do Feed que você deseja adicionar</h4>
+			<form novalidate name="form" ng-submit="addFeed(data)">
+				<div class="list list-inset">
+						<label 
+							class="item item-input" 
+							ng-class="{ 'feed-input-invalid': form.name.$invalid && form.name.$touched }"
+						>
+								<span class="input-label"><b>Nome*</b></span>
+								<input type="text" name="name" ng-model="data.name" required>
+						</label>
+						<label 
+							class="item item-input"
+							ng-class="{ 'feed-input-invalid': (form.url.$invalid || !urlInvalid) && form.url.$touched }"
+						>
+								<span class="input-label"><b>Link*</b></span>
+								<input type="text" name="url" ng-model="data.url" required ng-blur="checkUrl(data.url)">
+						</label>
+				</div>
+				<p 
+					class="center-align error" 
+					ng-show="!urlInvalid && form.url.$touched"
+				>
+					Isto não é um Link válido.
+				</p>
+				<p class="required">* Campos obrigatórios</p>
+				<button 
+					type="submit" 
+					class="button button-block button-positive" 
+					ng-disabled="(form.$invalid || !urlInvalid)"
+				>
+					<b>ADICIONAR</b>
+				</button>
+			</form>
+    </ion-content>
+</ion-view>
+  

@@ -1,0 +1,18 @@
+<ion-view view-title="Detalhes do Post">
+  <ion-content class="padding">
+		<h4 class="center-align">Você está no Feed de {{ feed.name }}</h4>
+		<button 
+			class="button icon-left ion-chevron-left button-positive center-button"
+			ng-click="navigateToFeed()"
+		>
+			<b>VOLTAR PRA TODOS OS FEEDS</b>
+		</button>
+    <div class="card">
+      <div class="item item-text-wrap">
+				<h1>{{ post.title }}</h1>
+				<p class="post-content">{{ post.url }}</p>
+        {{ post.text }}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

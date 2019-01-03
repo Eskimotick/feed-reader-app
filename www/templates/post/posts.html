@@ -1,0 +1,28 @@
+<ion-view view-title="{{ feed.name }}">
+  <ion-content class="padding">
+		<div ng-show="posts.length != 0">
+			<h4 class="center-align">Leia os posts mais recentes deste feed!</h4>
+			<a 
+				class="item item-avatar post" 
+				ng-class="{
+					'read': post.read,
+					'unread': !post.read
+				}"
+				ng-repeat="post in posts"
+				ng-click="navigateToDetails(post)"
+			>
+				<img 
+					class="post-icon" 
+					src="{{ post.read ? '../../img/read.svg' : '../../img/unread.svg' }}" 
+				>
+				<b>{{ post.title }}</b>
+				<p>{{ post.url }}</p>
+			</a>
+		</div>
+		<div class="centered" ng-show="posts.length == 0">
+			<p>Desculpe, nenhum post recente :(</p>
+			<img src="../../img/empty.svg" height="100">
+		</div>
+  </ion-content>
+</ion-view>
+      
