@@ -8,7 +8,7 @@ Abrir o git Bash em alguma pasta e siga esses passos para a instalação
 
 ```bash 
 git clone https://github.com/Eskimotick/feed-reader-app.git
-cd feed-reader-app/front
+cd feed-reader-app/
 npm install
 ```
 
