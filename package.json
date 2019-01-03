@@ -2,6 +2,9 @@
   "name": "front",
   "version": "0.0.1",
   "description": "An Ionic project",
+  "dependencies": {
+    "express": "~4.4.3"
+  },
   "devDependencies": {
     "@ionic/v1-toolkit": "^1.0.0",
     "gulp": "^3.5.6",
